@@ -1,0 +1,316 @@
+﻿<link rel="stylesheet" type="text/css" href="Content/Site.css" /><link rel="stylesheet" type="text/css" href="Content/Site.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<head>
+    <title>Jardin De bauté</title>
+</head>
+<body>
+<header>
+    <div>
+        <h2 style="font-family: sans-serif; font-size: 60px; color: black; float: center">Jardin De Bauté</h2>
+        <!-- <div class="container" style="background-image: url('../../Content/Images/header.jpg');">
+        <h2 style="font-family: verdana; font-size: 60px; color: white">Jardin De Bauté</h2> -->
+</div>
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster"/>
+
+        <!-- Enabling HTML5 support for Internet Explorer -->
+        <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </div>
+</header>
+
+<div>
+    <nav>
+        <ul class="fancyNav">
+            <li id="news"><a href="#news">News</a></li>
+            <li id="about"><a href="#about">About us</a></li>
+            <li id="services"><a href="#services">Services</a></li>
+            <li id="contact"><a href="#contact">Contact us</a></li>
+        </ul>
+    </nav>
+</div>
+
+<!-- <ul>
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="#Tegelwerken">Tegelwerken</a></li>
+    <li><a href="#Zwembaden">Zwembaden</a></li>
+    <li><a href="#Contact">Contact</a></li>
+</ul>
+<div>
+    <img style="height: 100px; width: 100%" class="img-responsive;"
+         src="/Content/Images/tuin_verharding.jpg" />
+    <div class="home">
+        <span class="name">JardinDeBaute.be</span><br />
+        <span class="address">Winkelstraat 1</span><br />
+        <span class="city">9700 Oudenaarde</span><br />
+        <span class="tel">0496/811610</span><br />
+    </div>
+</div> -->
+<div class="w3-content w3-display-container" style="padding-top: 40px; width: 100%;">
+    <img class="mySlides" src="Content/Images/slideshow1.jpg" style="width: 100%">
+    <img class="mySlides" src="Content/Images/slideshow2.jpg" style="width: 100%">
+    <img class="mySlides" src="Content/Images/slideshow3.jpg" style="width: 100%">
+    <img class="mySlides" src="Content/Images/slideshow4.jpg" style="width: 100%">
+    <img class="mySlides" src="Content/Images/slideshow5.jpg" style="width: 100%">
+
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = x.length
+        }
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
+    }
+</script>
+<div style="display: inline-block; padding-top: 10px">
+    <div class="col-sm-3">
+        <img src="Content/Images/aanleg.png"/>
+        <h3>Aanleg</h3>
+    </div>
+    <div class="col-sm-3">
+        <img src="Content/Images/automatische-poorten.png"/>
+        <h3>Automatische poorten</h3>
+    </div>
+    <div class="col-sm-3">
+        <img src="Content/Images/groot-formaat-tegels.png"/>
+        <h3>Groot formaat tegels</h3>
+    </div>
+    <div class="col-sm-3">
+        <img src="Content/Images/zwembaden.png"/>
+        <h3>Zwembaden</h3>
+    </div>
+</div>
+<div>Gespecialiseerd in het plaatsen van
+    grootformaat tegels en keermuren
+    Maken van inritten, terrassen enz in diverse soorten materialen zoals kleiklinkers, natuursteen,
+    grindsoorten en natuurlijk eurodallen.</div>
+<footer>
+    <div>
+        <span style="color: black">
+            <span style="font-family: sans-serif">
+                "Jardin De Bauté | Winkelstraat 1 | 9700 Oudenaarde | 0496811610"
+            </span>
+        </span>
+        <div>
+            <a target="_blank" title="find us on Facebook"
+               href="https://www.facebook.com/supporters.tim.merlier/">
+                <img alt="follow me on facebook" src="//login.create.net/images/icons/user/facebook_30x30.png"
+                     border=0>
+            </a>
+        </div>
+    </div>
+
+</footer>
+</body>
+<style>
+    body {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+
+    /* Set padding to keep content from hitting the edges */
+    .body-content {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* Override the default bootstrap behavior where horizontal description lists
+   will truncate terms that are too long to fit in the left column
+*/
+    .dl-horizontal dt {
+        white-space: normal;
+    }
+
+    /* Set width on the form input elements since they're 100% wide by default */
+    input,
+    select,
+    textarea {
+        max-width: 280px;
+    }
+    .img-responsive {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: auto;
+        margin-top: auto;
+    }
+
+    .container {
+        text-align:center;
+        font-weight:bold;
+        background-position: top;
+        margin-bottom: 0px;
+        width: 100%;
+        height: 100px;
+        top: 0px;
+        margin-top: 2px;   }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    li {
+        float: left;
+        border-right: 1px solid #bbb;
+    }
+
+    li:last-child {
+        border-right: none;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: #111;
+    }
+
+    .active {
+        background-color: #4CAF50;
+    }
+    .home {
+        background-color: #4caf50;
+        color: white;
+        font-family:verdana;
+        height: 80px;
+        width: 100%;
+        display:block;
+        margin-right: 10px;
+
+    }
+    .fancyNav li:after{
+
+        /* This creates a pseudo element inslide each LI */
+
+        content:'.';
+        text-indent:-9999px;
+        overflow:hidden;
+        position:absolute;
+        width:100%;
+        height:100%;
+        top:0;
+        left:0;
+        z-index:1;
+        opacity:0;
+
+        /* Gradients! */
+
+        background-image:-webkit-gradient(linear, left top, right top, from(rgba(168,168,168,0.5)),color-stop(0.5,rgba(168,168,168,0)), to(rgba(168,168,168,0.5)));
+        background-image:-moz-linear-gradient(left, rgba(168,168,168,0.5), rgba(168,168,168,0) 50%, rgba(168,168,168,0.5));
+        background-image:-o-linear-gradient(left, rgba(168,168,168,0.5), rgba(168,168,168,0) 50%, rgba(168,168,168,0.5));
+        background-image:-ms-linear-gradient(left, rgba(168,168,168,0.5), rgba(168,168,168,0) 50%, rgba(168,168,168,0.5));
+        background-image:linear-gradient(left, rgba(168,168,168,0.5), rgba(168,168,168,0) 50%, rgba(168,168,168,0.5));
+
+        /* Creating borders with box-shadow. Useful, as they don't affect the size of the element. */
+
+        box-shadow:-1px 0 0 #a3a3a3,-2px 0 0 #fff,1px 0 0 #a3a3a3,2px 0 0 #fff;
+        -moz-box-shadow:-1px 0 0 #a3a3a3,-2px 0 0 #fff,1px 0 0 #a3a3a3,2px 0 0 #fff;
+        -webkit-box-shadow:-1px 0 0 #a3a3a3,-2px 0 0 #fff,1px 0 0 #a3a3a3,2px 0 0 #fff;
+
+        /* This will create a smooth transition for the opacity property */
+
+        -moz-transition:0.25s all;
+        -webkit-transition:0.25s all;
+        -o-transition:0.25s all;
+        transition:0.25s all;
+    }
+    /* Treating the first LI and li:after elements separately */
+
+    .fancyNav li:first-child{
+        border-radius: 4px 0 0 4px;
+    }
+
+    .fancyNav li:first-child:after,
+    .fancyNav li.selected:first-child:after{
+        box-shadow:1px 0 0 #a3a3a3,2px 0 0 #fff;
+        -moz-box-shadow:1px 0 0 #a3a3a3,2px 0 0 #fff;
+        -webkit-box-shadow:1px 0 0 #a3a3a3,2px 0 0 #fff;
+
+        border-radius:4px 0 0 4px;
+    }
+
+    .fancyNav li:last-child{
+        border-radius: 0 4px 4px 0;
+    }
+
+    /* Treating the last LI and li:after elements separately */
+
+    .fancyNav li:last-child:after,
+    .fancyNav li.selected:last-child:after{
+        box-shadow:-1px 0 0 #a3a3a3,-2px 0 0 #fff;
+        -moz-box-shadow:-1px 0 0 #a3a3a3,-2px 0 0 #fff;
+        -webkit-box-shadow:-1px 0 0 #a3a3a3,-2px 0 0 #fff;
+
+        border-radius:0 4px 4px 0;
+    }
+
+
+    /*.fancyNav li:hover:after,
+    .fancyNav li.selected:after,
+    .fancyNav li:target:after{*/
+        /* This property triggers the CSS3 transition */
+        /*opacity:1;
+    }
+    .fancyNav:hover li.selected:after,
+    .fancyNav:hover li:target:after{*/
+        /* Hides the targeted li when we are hovering on the UL */
+        /*opacity:0;
+    }
+
+    .fancyNav li.selected:hover:after,
+    .fancyNav li:target:hover:after{
+        opacity:1 !important;
+    }*/
+
+
+    .fancyNav li a{
+        color: #5d5d5d;
+        display: inline-block;
+        font: 20px/1 Lobster,Arial,sans-serif;
+        padding: 12px 35px 14px;
+        position: relative;
+        text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.6);
+        z-index:2;
+        text-decoration:none !important;
+        white-space:nowrap;
+    }
+
+    .fancyNav a.homeIcon{
+        background:url('../img/home.png') no-repeat center center;
+        display: block;
+        overflow: hidden;
+        padding-left: 12px;
+        padding-right: 12px;
+        text-indent: -9999px;
+        width: 16px;
+    }
+
+</style>
