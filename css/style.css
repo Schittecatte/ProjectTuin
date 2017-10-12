@@ -3,6 +3,57 @@
         padding-top: 50px;
         padding-bottom: 20px;
     }
+    header {
+      height: 15em;
+      width: 100%;
+      background-color: #2D3047;
+    }
+    section {
+      margin: 0;
+      padding: 0;
+    }
+    .contact{
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 10em;
+      background-color: #2D3047;
+    }
+    .slide{
+
+        margin: 0;
+        padding: 0;
+      width: 100%;
+      height: 50em;
+    }
+    #title {
+      float: left;
+      padding: 2em 0 0 2em;
+      color: #E0CA3C;
+    }
+    #nav {
+      float: right;
+      margin-top: 4em;
+      margin-left: auto;
+      margin-right: 6em;
+    }
+    .nav-btn {
+      cursor: pointer;
+      padding: 1em;
+      border-radius: 10px;
+      text-align: center;
+      border: 0.5em solid #E0CA3C;
+      background-color: #2D3047;
+    }
+
+    .nav-btn > span {
+      font-size: 1.4em;
+      color: #E0CA3C;
+      letter-spacing: 1em;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: normal;
+    }
 
     /* Set padding to keep content from hitting the edges */
     .body-content {

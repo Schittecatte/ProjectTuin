@@ -16,13 +16,16 @@
 
 <header>
     <div>
-        <h2 style="font-family: sans-serif; font-size: 60px; color: black; float: center">Jardin De Bauté</h2>
-        <!-- <div class="container" style="background-image: url('../../Content/Images/header.jpg');">
-        <h2 style="font-family: verdana; font-size: 60px; color: white">Jardin De Bauté</h2> -->
+        <h2 id="title">Jardin De Bauté</h2>
+        <div id="nav">
+            <div class="nav-btn" onClick="document.getElementById('contact').scrollIntoView({block: 'start',  inline: 'nearest', behavior: 'smooth'});">
+              <span>Contact</span>
+            </div>
+        </div>
     </div>
 </header>
 
-<div>
+<!-- <div>
     <nav>
         <ul class="fancyNav">
             <li id="news"><a href="#news">News</a></li>
@@ -31,7 +34,7 @@
             <li id="contact"><a href="#contact">Contact us</a></li>
         </ul>
     </nav>
-</div>
+</div> -->
 
 <!-- <ul>
     <li><a class="active" href="#home">Home</a></li>
@@ -49,7 +52,8 @@
         <span class="tel">0496/811610</span><br />
     </div>
 </div> -->
-<div class="w3-content w3-display-container" style="padding-top: 40px; width: 100%;">
+<section>
+<div class="w3-content w3-display-container; slide" style="padding-top: 40px; width: 100%;">
     <img class="mySlides" src="content/Images/slideshow1.jpg" style="width: 100%" />
     <img class="mySlides" src="content/Images/slideshow2.jpg" style="width: 100%" />
     <img class="mySlides" src="content/Images/slideshow3.jpg" style="width: 100%" />
@@ -59,8 +63,9 @@
     <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
     <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
 </div>
+</section>
 
-<div style="display: inline-block; padding-top: 10px">
+<!-- <div style="display: inline-block; padding-top: 10px">
     <div class="col-sm-3">
         <img src="content/Images/aanleg.png"/>
         <h3>Aanleg</h3>
@@ -77,12 +82,13 @@
         <img src="Content/Images/zwembaden.png"/>
         <h3>Zwembaden</h3>
     </div>
-</div>
-<div>Gespecialiseerd in het plaatsen van
+</div> -->
+<section>
+<div class="contact">Gespecialiseerd in het plaatsen van
     grootformaat tegels en keermuren
     Maken van inritten, terrassen enz in diverse soorten materialen zoals kleiklinkers, natuursteen,
     grindsoorten en natuurlijk eurodallen.</div>
-<footer>
+  <section id="contact">
     <div>
         <span style="color: black">
             <span style="font-family: sans-serif">
@@ -97,8 +103,9 @@
             </a>
         </div>
     </div>
+  </section>
+  </section>
 
-</footer>
 <script type="text/javascript" src="scripts/slideshow.js"> </script>
 </body>
 </html>
