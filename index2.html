@@ -5,22 +5,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="sven_style.css"/>
+  <script src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
+    <script
+    src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"
+    integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk="
+    crossorigin="anonymous"></script>
+  <script src="functions.js"/></script>
+
   <title>Awesome</title>
 </head>
 
 <body>
-  <header>
+  <section id="header">
     <div>
       <h1 id="title">Someone Awesome</h1>
       <div id="nav">
-          <div class="nav-btn" onClick="document.getElementById('about').scrollIntoView({block: 'start',  inline: 'nearest', behavior: 'smooth'});">
-            <span>About</span>
-          </div>
-
-
+        <div class="nav-btn" onClick="scrollToDiv('about')">
+          <span>About</span>
+        </div>
       </div>
     </div>
-  </header>
+  </section>
 
   <section id="main">
     <div id="main-container" class="container">
@@ -51,101 +60,6 @@
     </div>
   </section>
 
+
 </body>
-
 </html>
-
-<style>
-  body {
-    font-family: sans-serif;
-    padding: 0;
-    margin: 0;
-  }
-
-  header {
-    height: 10em;
-    width: 100%;
-    background-color: #2D3047;
-  }
-
-  section {
-    margin: 0;
-    padding: 0;
-  }
-
-  #nav {
-    float: right;
-    margin-top: 4em;
-    margin-left: auto;
-    margin-right: 6em;
-  }
-
-  #title {
-    float: left;
-    padding: 2em 0 0 2em;
-    color: #E0CA3C;
-  }
-
-  #main {
-    background-color: #048A81;
-  }
-
-  #main-container {
-    height: 30em;
-    align-items: center;
-    justify-content: center;
-    margin-right: 10em;
-    margin-left: auto;
-  }
-
-  #main-container > h1 {
-    font-size: 5em;
-    color: #C4CAC8;
-  }
-
-  #about-container {
-    background-color: #563440;
-  }
-
-  #contact-container {
-    height: 100em;
-    width: 100%;
-  }
-
-  .nav-btn {
-    cursor: pointer;
-    padding: 1em;
-    border-radius: 10px;
-    text-align: center;
-    border: 0.5em solid #E0CA3C;
-    background-color: #2D3047;
-  }
-
-  .nav-btn > span {
-    font-size: 1.4em;
-    color: #E0CA3C;
-    letter-spacing: 1em;
-    display: inline-block;
-    vertical-align: middle;
-    line-height: normal;
-  }
-
-  .container {
-    width: 100%;
-    display: flex;
-  }
-
-  .content-container {
-    margin: 2em;
-    padding: 1em;
-    background-color: #C4CAC8;
-    color: #2D3047;
-  }
-
-  .third {
-    margin-left: auto;
-    margin-right: auto;
-    height: 100%;
-    width: 30%;
-  }
-</style>
