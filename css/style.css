@@ -8,23 +8,17 @@
       width: 100%;
       background-color: #2D3047;
     }
-    section {
-      margin: 0;
-      padding: 0;
+    .slideshow > div {
+        position: absolute;
+        max-width: 100%;
+        width: 100%;
+        height: 240px;
+        max-height: 200px;
     }
-    .contact{
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      height: 10em;
-      background-color: #2D3047;
-    }
-    .slide{
 
-        margin: 0;
-        padding: 0;
-      width: 100%;
-      height: 50em;
+    .slideshow > div > img {
+        height: 100%;
+        width: 100%;
     }
     #title {
       float: left;
@@ -36,6 +30,25 @@
       margin-top: 4em;
       margin-left: auto;
       margin-right: 6em;
+    }
+    #main-container {
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .contact{
+      width: 100%;
+      height: 10em;
+      background-color: #2D3047;
+    }
+    .contact>span{
+      color: #E0CA3C;
+    }
+    .main{
+      width: 100%;
+      height: 50em;
     }
     .nav-btn {
       cursor: pointer;
