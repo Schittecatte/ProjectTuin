@@ -1,9 +1,9 @@
 /*
-  #E0CA3C
-  #563440
-  #048A81
-  #2D3047
-  #C4CAC8
+  #E0CA3C yellow
+  #563440 bordeaux
+  #048A81 green
+  #2D3047 blue
+  #C4CAC8 gray
 */
 
 body {
@@ -16,6 +16,10 @@ body {
   height: 10em;
   width: 100%;
   background-color: #2D3047;
+}
+
+#header>div>h1 {
+  font-size: 3em;
 }
 
 section {
@@ -31,8 +35,10 @@ section {
 }
 
 #title {
+  position: fixed;
   float: left;
-  padding: 2em 0 0 2em;
+  padding: 1.4em 0 0 2em;
+  margin: 0;
   color: #E0CA3C;
 }
 
@@ -54,7 +60,7 @@ section {
 }
 
 #about-container {
-  background-color: #563440;
+  background-color: #2D3047;
 }
 
 #contact-container {
@@ -65,9 +71,9 @@ section {
 .nav-btn {
   cursor: pointer;
   padding: 1em;
-  border-radius: 10px;
+  border-radius: 5px;
   text-align: center;
-  border: 0.5em solid #E0CA3C;
+  border: 0.3em solid #E0CA3C;
   background-color: #2D3047;
 }
 
@@ -87,16 +93,29 @@ section {
 }
 
 .content-container {
+  height: 25em;
+  margin: auto;
   padding: 1em;
-  background-color: #C4CAC8;
-  color: #2D3047;
+  border: 0.1em solid #E0CA3C;
+  background-color: #2D3047;
+  color: #C4CAC8;
+}
+
+.content-container>h2 {
+  text-align: center;
+  color: #E0CA3C;
+}
+
+.content-container>p {
+}
+
+.content-container>object {
+  height: 10em;
+  width: 10em;
+  margin-top: 5em;
+  width: 100%;
 }
 
 .third {
-  margin: 3em 5% 3em 5%;
-  display: inline-block;
-  /*margin-left: auto;
-  margin-right: auto;*/
-  height: 90%;
   width: 25%;
 }

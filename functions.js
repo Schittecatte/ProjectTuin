@@ -1,5 +1,17 @@
 function scrollToDiv(anchor) {
+  animateTitle()
   $('html, body').animate({scrollTop: $('#'+anchor).offset().top}, 1000, 'easeInOutCubic');
+}
+
+function animateTitle() {
+  $('#title').animate({
+    top: "+=100",
+    opacity: 0}, 500, 'easeInCubic');
+    $('#title').animate({
+      top: "-=200"}, 10);
+  $('#title').animate({
+    top: "+=100",
+    opacity: 100}, 500, 'easeOutCubic');
 }
 
 function setMainHeight() {
