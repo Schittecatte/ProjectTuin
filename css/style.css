@@ -37,18 +37,24 @@
       justify-content: center;
       margin-right: auto;
       margin-left: auto;
+      margin-bottom: 0px;
     }
-    .contact{
+
+    #about-container {
+      background-color: #2D3047;
+    }
+    .about{
       width: 100%;
       height: 10em;
       background-color: #2D3047;
     }
-    .contact>span{
+    .about>span{
       color: #E0CA3C;
     }
     .main{
       width: 100%;
       height: 50em;
+
     }
     .nav-btn {
       cursor: pointer;
@@ -57,6 +63,38 @@
       text-align: center;
       border: 0.5em solid #E0CA3C;
       background-color: #2D3047;
+    }
+    .container {
+      width: 100%;
+      display: flex;
+    }
+
+    .content-container {
+      height: 25em;
+      margin: auto;
+      padding: 1em;
+      border: 0.1em solid #E0CA3C;
+      background-color: #2D3047;
+      color: #C4CAC8;
+    }
+
+    .content-container>h2 {
+      text-align: center;
+      color: #E0CA3C;
+    }
+
+    .content-container>p {
+    }
+
+    .content-container>object {
+      height: 10em;
+      width: 10em;
+      margin-top: 5em;
+      width: 100%;
+    }
+
+    .third {
+      width: 25%;
     }
 
     .nav-btn > span {
