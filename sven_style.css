@@ -18,7 +18,7 @@ body {
   background-color: #2D3047;
 }
 
-#header>div>h1 {
+#header>div>div>h1 {
   font-size: 3em;
 }
 
@@ -28,10 +28,9 @@ section {
 }
 
 #nav {
-  float: right;
-  margin-top: 4em;
-  margin-left: auto;
-  margin-right: 6em;
+  position: fixed;
+  display: block;
+  top: 60px;
 }
 
 #title {
@@ -59,7 +58,12 @@ section {
   color: #C4CAC8;
 }
 
+#about {
+  height: 60em;
+}
+
 #about-container {
+  height: 60em;
   background-color: #2D3047;
 }
 
@@ -69,16 +73,18 @@ section {
 }
 
 .nav-btn {
+  display: inline-block;
   cursor: pointer;
   padding: 1em;
+  margin-left: 1em;
   border-radius: 5px;
   text-align: center;
-  border: 0.3em solid #E0CA3C;
+  border: 0.2em solid #E0CA3C;
   background-color: #2D3047;
 }
 
 .nav-btn>span {
-  font-size: 1.4em;
+  font-size: 1em;
   color: #E0CA3C;
   letter-spacing: 1em;
   margin-right:-1em;

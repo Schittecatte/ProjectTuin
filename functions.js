@@ -1,6 +1,14 @@
+let scrollTriggered = false;
+
+$(function() {
+  setMainHeight();
+  positionNav();
+  $('html, body').animate({scrollTop: 0}, 500, 'easeInOutCubic');
+});
+
 function scrollToDiv(anchor) {
   animateTitle()
-  $('html, body').animate({scrollTop: $('#'+anchor).offset().top}, 1000, 'easeInOutCubic');
+  $('html, body').animate({scrollTop: $('#'+anchor).offset().top}, 1000, 'easeInOutCubic', function() { scrollTriggered = false;});
 }
 
 function animateTitle() {
@@ -17,14 +25,13 @@ function animateTitle() {
 function setMainHeight() {
   let windowheight = $(window).innerHeight();
   $('#main-container').height(windowheight - $('#header').height());
-  $('#about-container').height(windowheight);
+}
+
+function positionNav() {
+  $('#nav').offset({left: $(window).width() - $('#nav').width() - 40});
 }
 
 $(window).resize(function() {
   setMainHeight();
-});
-
-$(function() {
-  $(document).scrollTop(0);
-  setMainHeight();
+  positionNav();
 });
